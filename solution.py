@@ -11,7 +11,7 @@ def solution(x: np.array, y: np.array) -> bool:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     alpha = 0.03
-    #statistic, pvalue = ks_2samp(x, y) #3/4
+    statistic, pvalue = ks_2samp(x, y) #3/4
     #pvalue = MMD(compute_kernel="poly").test(x, y)[1] #1/4
-    pvalue = anderson_ksamp([x, y]).pvalue
+    #pvalue = anderson_ksamp([x, y]).pvalue #2/4
     return pvalue < alpha
