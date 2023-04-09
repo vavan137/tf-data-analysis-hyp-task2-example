@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-#from scipy.stats import ks_2samp
+from scipy.stats import ks_2samp
 #from hyppo.ksample import MMD
-from scipy.stats import anderson_ksamp
+#from scipy.stats import anderson_ksamp
 
 chat_id = 5463739632 # Ваш chat ID, не меняйте название переменной
 
